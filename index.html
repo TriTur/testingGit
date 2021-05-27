@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<!-- ESPECIFICACIONES DEL FORMULARIO WEB
+El formulario debe preguntar:
+ 
+Nombre. El campo debe aceptar un máximo de 30 caracteres.
+Apellidos. El campo debe aceptar un máximo de 30 caracteres.
+Email. Campo de relleno obligado.
+Asunto a elegir una opción entre pedir presupuesto, solicitar cita previa,
+ otros. Deben mostrarse las 3 opciones en un cajetín según la imagen 
+ (usa el atributo size).
+Cómo nos a escogido a elegir una o más opciones entre un amigo, googleando,
+ buzoneo, otros. Siendo la elección simple o múltiple.
+Un mensaje. Debe tener una longitud máxima de 300 caracteres
+Aceptación de cláusula rgpd. De obligada selección antes de enviar el 
+currículum
+ 
+El que quiera pueda usar CSS y dejarlo como la imagen.
+ 
+https://imgur.com/ld4O1GN -->
+
+<body>
+    <div class="container">
+        <form action="" method="GET">
+
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" maxlength="30" placeholder="Escribe tu nombre"><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" maxlength="30" placeholder="Escribe tu apellido"><br>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" placeholder="correo@empresa.com" required><br>
+            <label for="asunto">Asunto a elegir</label><br>
+            <select name="asunto" id="asunto" size="3">
+                <option value="presupuesto">Pedir presupuesto web</option>
+                <option value="citaPrevia">Solicitar cita previa</option>
+                <option value="otros">Otros</option>
+            </select><br>
+            <label for="comoescoger">¿Cómo nos ha encontrado?:</label><br>
+            <div class="check">
+                <input type="checkbox" name="amigo" id="">Un amigo
+                <input type="checkbox" name="google" id="">googleando
+                <input type="checkbox" name="buzon" id="">Buzoneo
+                <input type="checkbox" name="otros" id="">otros
+            </div><br>
+            <label for="mensaje">Escribe tu mensaje:</label><br>
+            <textarea name="" id="" cols="30" rows="10" maxlength="300"></textarea><br>
+            <input type="checkbox" name="privacidad" id="privacidad" required>He leido y acepto el <a href="#">aviso legal y la
+                política de privacidad</a>
+                <input type="submit" value="Enviar">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
